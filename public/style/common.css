@@ -31,7 +31,7 @@ body{
 .input-wrap input{
     border: none;
     background-color: transparent;
-    font-size: 16px;
+    font-size: 1rem;
     width: calc(100% - 24px);
 }
 .input-wrap input::placeholder{
@@ -66,7 +66,7 @@ body{
 }
 .nav-wrap .logo-wrap .logo-text{
     color: #FFFFFF;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 .nav-wrap .menu-wrap{
     margin-top: 16px;
@@ -113,4 +113,55 @@ body{
 }
 .playerbar-wrap .music-title-wrap .icon-wrap svg{
     width: 100%;
+}
+
+@media screen and (max-width:1080px){
+    html{
+        font-size: 14px;
+    }
+    .nav-wrap{
+        width: 250px;
+    }
+    .playerbar-wrap .music-title-wrap {
+        width: 280px;
+        margin-left: calc(50% - 265px);
+    }
+}
+@media screen and (max-width:780px){
+    .nav-wrap{
+        width: 180px;
+    }
+    .playerbar-wrap .music-title-wrap {
+        margin-left: calc(50% - 230px);
+    }
+}
+@media screen and (max-width:580px){
+    html{
+        font-size: 13px;
+    }
+    .nav-wrap{
+        width: 80px;
+        padding:18px;
+    }
+    .nav-wrap .logo-wrap{
+        justify-content: center;
+    }
+    .nav-wrap .logo-wrap .logo-text, .nav-wrap .menu-wrap .menu a .menu-text{
+        display: none;
+    }
+    .nav-wrap .menu-wrap .menu a.active{
+        justify-content: center;
+    }
+    .nav-wrap .logo-wrap .icon-wrap, .nav-wrap .menu-wrap .menu .icon-wrap{
+        margin-right: 0;
+    }
+    .playerbar-wrap .music-title-wrap {
+        width: 180px;
+        margin-left: calc(50% - 130px);
+    }
+}
+@media screen and (max-width:580px){
+    html{
+        font-size: 12px;
+    }
 }

@@ -9,50 +9,96 @@
 }
 .content-wrap .content-box{
     padding: 38px;
+    min-height: calc(100vh - 38px);
 }
-.content-wrap .content-box .section-wrap:nth-child(n+1){
-    margin-top: 38px;
+.content-wrap .content-box .section-wrap{
+    padding-top: 50px;
 }
-.content-wrap .content-box .section-title{
+.content-wrap .content-box .section-wrap .title-wrap{
     display: flex;
     align-items: center;
-    font-size: 22px;
+    justify-content: space-between;
+}
+.content-wrap .content-box .title-wrap .section-title{
+    font-size: 1.375rem;
     font-weight: 600;
 }
-.content-wrap .content-box .section-title .icon-wrap{
+.content-wrap .content-box .title-wrap .location-wrap{
+    display: flex;
+    align-items: center;
+}
+.content-wrap .content-box .title-wrap .location-wrap .location-text{
+    font-size: 1.125rem;
+    margin-left: 4px;
+    color: var(--gray);
+}
+.content-wrap .content-box .title-wrap .location-wrap .icon-wrap, .content-wrap .content-box .section-row .section-box .title-wrap .icon-wrap{
     width: 20px;
     height: 20px;
-    margin-left: 6px;
 }
-.content-wrap .content-box .section-title .icon-wrap svg{
-    width: 100%;
-    fill: var(--gray);
-}
+
 .content-wrap .content-box .section-row{
     margin-top: 24px;
     gap: 1.5rem;
-    margin-top: 24px;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 .content-wrap .content-box .section-row .section-box {
+    background-color: rgba(57, 57, 59, 0.8);
+    padding: 16px;
+    border-radius: 5px;
     
 }
-.content-wrap .content-box .section-row .section-box .music-img{
-    width: 226px;
-    height: 226px;
-    border-radius: 5px;
-    background-color: var(--gray);
-    margin-bottom: 16px;
+.content-wrap .content-box .section-row .section-box .title-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: start;
 }
-.content-wrap .content-box .section-row .section-box .music-img img{
-    width: 100%;
+.content-wrap .content-box .section-row .section-box .title-wrap .movie-title{
+    margin-left: 6px;
+    font-size: 1.125rem;
 }
-.content-wrap .content-box .section-row .section-box .music-title{
-    margin-bottom: 6px;
-    font-size: 18px;
-}
-.content-wrap .content-box .section-row .section-box .artist-name{
+.content-wrap .content-box .section-row .section-box .movie-year{
     color: var(--gray);
-    font-size: 15px;
+    font-size: 1rem;
+    margin-top: 12px;
+}
+.content-wrap .content-box .section-row .section-box .link-btn{
+    padding: 8px;
+    margin-top: 16px;
+    width: auto;
+    background-color: var(--point-pink);
+    border-radius: 5px;
+    text-align: center;
+}
+
+@media screen and (max-width:1080px){
+    .content-wrap{
+        padding-left: 250px;
+    }
+    .content-wrap .content-box .section-row{
+        gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width:780px){
+    .content-wrap{
+        padding-left: 180px;
+    }
+}
+@media screen and (max-width:580px){
+    .content-wrap{
+        padding-left: 80px;
+    }
+    .content-wrap .content-box .section-row{
+        gap: 0.8rem;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width:580px){
+    .content-wrap .content-box{
+        padding: 20px;
+        min-height: calc(100vh - 20px);
+    }
 }
