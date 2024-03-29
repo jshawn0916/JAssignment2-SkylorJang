@@ -1,0 +1,14 @@
+<div class="content-box">
+    <div class="section-wrap">
+        <p class="section-title"><%- weather %> Day Movie</p>
+        <div class="section-row">
+            <% for(var i = 0; i < movies.length; i++){ %>
+            <div class="section-box">
+                <p class="music-title"><%- movies[i].movie.title %></p>
+                <p class="artist-name"><%- movies[i].movie.year %></p>
+                <a href="https://www.imdb.com/title/<%- movies[i].movie.ids.imdb %>" target="_blank">Link</a>
+            </div>
+            <% } %>
+        </div>
+    </div>
+</div>
