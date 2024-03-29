@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # JAssignment2 Project
 
 This project is a web application that utilizes user location data to determine the current weather and provides the user with relevant movie suggestions based on the weather conditions. Additionally, it offers the functionality to navigate to IMDb's detailed page for selected movies.
@@ -42,4 +42,4 @@ This project is a web application that utilizes user location data to determine 
 - Trakt API (movie search)
 - IMDb (movie details)
 - AbstractAPI (location information)
->>>>>>> 014cf56926369165c70cb6f7215205b8e6bb6ea6
+
